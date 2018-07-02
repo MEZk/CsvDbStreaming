@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        jdbc.lob.non_contextual_creation: true
+    show-sql: false
+
+flyway:
+  locations: classpath:db/migration
+  enabled: true
+  user: postgres
+  password: postgres
+
+
+
+
+
